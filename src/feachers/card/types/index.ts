@@ -1,0 +1,15 @@
+export interface ICard {
+  ageLimit: number,
+  imgSrc: string,
+  playersFrom: number,
+  playersTo: number,
+  price: number,
+  timeFrom: number,
+  timeTo: number,
+  title: string,
+  category: string,
+  cotalog: string,
+  product: string,
+  discount?: number,
+  oldPrice?: number,
+}

@@ -1,0 +1,1 @@
+export { InfoGamePlace } from './ui/InfoGamePlace'
