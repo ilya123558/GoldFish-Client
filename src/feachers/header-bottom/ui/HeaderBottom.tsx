@@ -1,13 +1,14 @@
 import { Container } from '@/app/layout';
-import { CotalogPopUp } from '@/entities/cotalog-pop-up';
+import { CotalogPopUp } from '@/entities/cotalog';
+import { RegistrationOrAuthorization } from '@/feachers/registrationOrAuthorization';
 import ContactList from '@/shared/ui/contact-list';
-import { ModalWindow } from '@/shared/ui/modal-window';
 import Social from '@/shared/ui/social';
 import React, { useState } from 'react';
 
-export const HeaderBottom = () => {
 
+export const HeaderBottom = () => {
   const [isActive, setIsActive] = useState(false)
+  const [isOpenModal, setIsOpenModal] = useState(false)
 
   const handleClick = () => {
     setIsActive((prev) => !prev)
@@ -27,7 +28,7 @@ export const HeaderBottom = () => {
         <ContactList />
         <Social />
       </Container>
-      {isActive && <ModalWindow />}
+      {isOpenModal && <RegistrationOrAuthorization isOpen={isOpenModal} setIsOpen={setIsOpenModal}/>}
       <CotalogPopUp className={'top-[-43px] transition-all duration-500 ' + (isActive ? '' : 'translate-x-[-2000px]')} />
     </div>
   );

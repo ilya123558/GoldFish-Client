@@ -1,0 +1,1 @@
+export { cardContentMapping } from './const'

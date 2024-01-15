@@ -14,9 +14,9 @@ export const cotalogItems = [
     imgSrc: colors,
     link: 'colors'
   }, {
-    title: 'Magic:the Cathering',
+    title: 'Magic:the Gathering',
     imgSrc: magicTheGathering,
-    link: 'magic:the-gathering'
+    link: 'magic-the-gathering'
   }, {
     title: 'Весь каталог',
     imgSrc: allCatalog,

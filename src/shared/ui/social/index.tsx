@@ -6,11 +6,11 @@ import { socialList } from './const';
 const Social = () => {
 
   return (
-    <ul className='flex items-start'>
-      {socialList.map(({ link, url, wh }) => (
+    <ul className='flex items-center'>
+      {socialList.map(({ link, url }) => (
         <li key={link} className='ml-[10px]'>
           <Link href={link}>
-            <Image alt={link} src={url} width={wh} height={wh} />
+            <Image alt={link} src={url} className="w-full h-auto object-contain" />
           </Link>
         </li>
       ))}

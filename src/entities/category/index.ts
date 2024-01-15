@@ -1,0 +1,2 @@
+export { type ICategory, type ICategoryList } from './types/index.interface'
+export { useGetCategoriesByCotalogQuery, useLazyGetCategoriesByCotalogQuery, categoryAPI, getCategory, getCategories } from './api'

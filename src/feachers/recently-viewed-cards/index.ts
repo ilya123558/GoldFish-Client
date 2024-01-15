@@ -1,0 +1,1 @@
+export { RecentlyViewedCards } from "./ui/RecentlyViewedCards";

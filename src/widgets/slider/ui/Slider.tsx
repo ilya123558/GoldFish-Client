@@ -5,12 +5,12 @@ import Image from 'next/image';
 import { Container } from '@/app/layout';
 import { arrow } from '@/app/assets/images/slider';
 import { Typography } from '@/shared/ui/typography';
-import { Card, ICard } from '@/feachers/card';
+import { ICardList, Card } from '@/entities/card';
 
 import 'swiper/css/bundle'
 
 interface IProps {
-  slides: ICard[],
+  slides: ICardList,
   title: string
 }
 

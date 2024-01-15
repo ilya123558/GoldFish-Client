@@ -16,11 +16,9 @@ export const FooterBottom = () => {
               key={index}
               alt="card"
               src={card}
-              width={0}
-              height={0}
-              layout="responsive"
-              objectFit="contain"
-              className="m-[6px]"
+              width={500}
+              height={500}
+              className="m-[6px] w-full h-auto object-contain"
             />
           ))}
         </ul>

@@ -7,7 +7,7 @@ import { NextPage } from 'next';
 const Busket: NextPage<{ num?: number }> = ({ num }) => {
   return (
     <div className='relative'>
-      <Image alt="busket" src={busket} width={35} height={35} />
+      <Image alt="busket" src={busket} width={35} />
       {num && <div className='absolute w-[16px] h-[16px] bg-gold flex items-center justify-center rounded-[50%] text-[10px] font-black top-[0px] right-[0px] text-white'>
         {num}
       </div>}

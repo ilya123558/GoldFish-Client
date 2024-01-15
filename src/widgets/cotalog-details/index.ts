@@ -1,0 +1,1 @@
+export { CotalogDetails } from "./ui/CotalogDetails";

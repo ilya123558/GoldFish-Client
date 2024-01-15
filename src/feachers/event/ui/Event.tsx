@@ -24,8 +24,8 @@ export const Event: NextPage<IProps> = ({ title, events, url, className }) => {
             <Image
               alt="event"
               src={findEventImg(url)}
-              width={0} height={0}
-              layout="fill"
+              width={500} height={500}
+              className="object-cover w-full h-full"
             />
             <div className="absolute w-full h-[112px] bottom-0">
               <div className="absolute w-full h-full opacity-[0.8] bg-primary bottom-0 right-0"></div>
